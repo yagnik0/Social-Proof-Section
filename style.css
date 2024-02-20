@@ -1,0 +1,136 @@
+:root {
+    --darkpink: hsl(300, 43%, 22%);
+    --pink:hsl(333, 80%, 67%);
+    --gray:hsl(303, 10%, 53%);
+    --lightgray:hsl(300, 24%, 96%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.6rem;
+}
+
+.container {
+    padding: 0 16.6rem;
+}
+
+.flex-info, .flex-content{
+    display: flex;
+}
+
+/* Flex box content styling */
+
+.head-content {
+    max-width: 44rem;
+}
+
+.head-style{
+    font-size: 5.3rem;
+    color: var(--darkpink);
+    font-weight: 700;
+}
+
+.para-style {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    margin-top: 2.7rem;
+    color: var(--gray);
+}
+
+.col-3-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin: 2.4rem 0.6rem;
+}
+
+.box-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem ;
+    background-color: var(--lightgray);
+    border-radius: 0.8rem;
+    width: 100%;
+    gap: 3.3rem;
+}
+
+.stars{
+    display: flex;
+    gap: 0.8rem;
+}
+
+.star-para {
+    font-size: 1.7rem;
+    color: var(--darkpink);
+    font-weight: 700;
+}
+
+.box-flex:nth-child(2) {
+    transform: translateX(50px);
+}
+
+.box-flex:nth-child(3) {
+    transform: translateX(100px);
+}
+
+/* Grid 3 Columns Styling */
+
+.grid-3-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    gap: 2.6rem;
+}
+
+.boxes {
+    background-color: var(--darkpink);
+    color: #fff;
+    padding: 3.2rem;
+    border-radius: 1.2rem;
+}
+
+.name-flex {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 40px;
+}
+
+.name-head{
+    font-weight: 500;
+}
+
+.subtext {
+    color: var(--pink);
+    margin-top: 0.5rem;
+}
+
+.boxes-para {
+    line-height: 1.2;
+}
+
+.boxes:nth-child(2) {
+    transform: translateY(18px);
+}
+
+.boxes:nth-child(3) {
+    transform: translateY(36px);
+}
