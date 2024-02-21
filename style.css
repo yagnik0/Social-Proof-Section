@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-    padding: 0 16.6rem;
+    padding: 0 16.6rem 8rem;
 }
 
 .flex-info, .flex-content{
@@ -125,6 +125,7 @@ body {
 
 .boxes-para {
     line-height: 1.2;
+    font-size: 1.6rem;
 }
 
 .boxes:nth-child(2) {
@@ -133,4 +134,40 @@ body {
 
 .boxes:nth-child(3) {
     transform: translateY(36px);
+}
+
+
+@media (max-width:35rem) {
+
+    .container {
+        padding: 2rem;
+    }
+
+    .flex-info, .flex-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .box-flex:nth-child(2), .box-flex:nth-child(3) {
+        transform: translateX(0px);
+    }
+
+    .head-style {
+        font-size: 3rem;
+    }
+
+    .grid-3-col{
+        grid-template-columns: 1fr;
+        margin-top: 3.5rem;
+        gap: 1rem;
+        margin-bottom: 3rem;
+    }
 }
